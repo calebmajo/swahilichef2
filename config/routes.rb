@@ -1,9 +1,14 @@
 Swahilichef::Application.routes.draw do
-  get "static_pages/landing"
 
-  get "static_pages/home"
+  root to: 'static_pages#home'
 
-  get "static_pages/help"
+  match '/landing', to:  'static_pages#landing'
+
+  match '/landing', to: 'static_pages#help'
+
+  match '/about', to: 'static_pages#about'
+
+  match '/contact', to: 'static_pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
