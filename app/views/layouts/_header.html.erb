@@ -1,7 +1,19 @@
 <header class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<%= link_to "sample app", root_path, id: "logo" %>
+					<!--<%= link_to "sample app", root_path, id: "logo" %>-->
+					<a href="root_path" id="logo"><span style="color: #FFFFFF;">Swahili</span><span style="color: #FFCC00">Chef</span></a>
+
+					<form class="navbar-search pull-left offset2">
+ 						<div class="control-group">
+ 							<div class="controls">
+ 							 	<div class="input-append">
+ 						 		 	<input type="text" class="search-query" placeholder="Search" class="navbar-inverse">
+ 									<span class="add-on"><i class="icon-search"></i></span>
+ 								</div>						 	
+ 						 	</div>
+ 						 </div>
+					</form>
 					<nav>
 						<ul class="nav pull-right">
 							<li><%= link_to "Home", root_path %></li>
@@ -11,4 +23,4 @@
 					</nav>
 				</div>
 			</div>
-		</header>
+</header>
